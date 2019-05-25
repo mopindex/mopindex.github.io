@@ -8,24 +8,19 @@
 </head>
 <body style="text-align: center">
     <header>
-        <h1>MOP INDEX</h1>
+        <h1 style="font-size: 3em">MOP INDEX</h1>
         <h2>CURRENT MOP GIRLFRIEND PROBABILITY: <span id="probability"></span></h2>
     </header>
 
     <main>
-        <img src="https://i.imgur.com/d5itA2K.jpg" />
+        <img style="width: 75%" src="https://i.imgur.com/d5itA2K.jpg" />
     </main>
 
     <script>
         const probability = document.getElementById("probability");
 
-        function calculateProbability() {
-            return Math.floor(Math.random() * 99);
-        }
-
         function setProbability() {
             probability.innerHTML = `${Math.floor(Math.random() * 99)}%`;
-            setTimeout(setProbability, 1000);
         }
 
         setProbability();
