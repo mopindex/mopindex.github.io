@@ -8,8 +8,8 @@
 </head>
 <body style="text-align: center">
     <header>
-        <h1 style="font-size: 3em">MOP INDEX</h1>
-        <h2>CURRENT MOP GIRLFRIEND PROBABILITY: <span id="probability"></span></h2>
+        <h1 class="header">MOP INDEX</h1>
+        <h2 class="probability">CURRENT MOP GIRLFRIEND PROBABILITY: <span id="probability"></span></h2>
     </header>
 
     <main>
@@ -25,5 +25,19 @@
 
         setProbability();
     </script>
+
+    <style>
+        .header {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .probability {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 1em;
+        }
+    </style>
 </body>
 </html>
