@@ -1,0 +1,27 @@
+{
+  "name": "mopindex.github.io",
+  "version": "1.0.0",
+  "description": "The mop index",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mopindex/mopindex.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mopindex/mopindex.github.io/issues"
+  },
+  "homepage": "https://github.com/mopindex/mopindex.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.1"
+  }
+}

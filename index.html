@@ -17,13 +17,13 @@
     </main>
 
     <script>
-        const probability = document.getElementById("probability");
+        const date = new Date();
+        localStorage
+        const probability = Math.floor(Math.random() * 99);
+        const element = document.getElementById('probability');
 
-        function setProbability() {
-            probability.innerHTML = `${Math.floor(Math.random() * 99)}%`;
-        }
 
-        setProbability();
+        element.innerHTML = probability;
     </script>
 
     <style>
