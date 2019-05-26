@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         const element = document.getElementById('probability');
-        axios.get('http://localhost:8080/probability')
+        axios.get('https://mopindex.herokuapp.com/probability')
             .then(response => {
                 element.innerHTML = response.data;
             });
