@@ -21,7 +21,7 @@
         const element = document.getElementById('probability');
         axios.get('https://mopindex.herokuapp.com/probability')
             .then(response => {
-                element.innerHTML = response.data;
+                element.innerHTML = `${response.data}%`;
             });
 
     </script>
