@@ -16,14 +16,14 @@
         <img style="width: 75%" src="https://i.imgur.com/d5itA2K.jpg" />
     </main>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-        const date = new Date();
-        localStorage
-        const probability = Math.floor(Math.random() * 99);
         const element = document.getElementById('probability');
+        axios.get('http://localhost:8080/probability')
+            .then(response => {
+                element.innerHTML = response.data;
+            });
 
-
-        element.innerHTML = probability;
     </script>
 
     <style>
